@@ -90,7 +90,7 @@ if(*banheiro<0)
 //VEFICA OS ALERTAS################
 //vefifica tedio
 if(*tedio >0 && *tedio<= 15)
-printf("Alerta: tedio está com valor baixo\n");
+printf("Alerta: tédio está com valor baixo\n");
 //vefica sono
 if(*sono >0 && *sono <=15)
 printf("Alerta: sono está com valor baixo\n");
@@ -144,7 +144,7 @@ int main(){
     int fome, sede, banheiro, sono, tedio;
     int acoes;
     scanf("%d %d %d %d %d", &fome, &sede, &banheiro, &sono, &tedio);
-    scanf("%d", &acoes);
+    scanf("%d\n", &acoes);
     for(int i = 0; i<acoes; i++){
         int ret = simula_sims(&fome, &sede, &banheiro, &sono, &tedio);
         if(ret == 0) break;
